@@ -9,10 +9,13 @@
         <module name="reggie_take_out" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="helloWorld" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="helloWorld" options="-parameters" />
       <module name="reggie_take_out" options="-parameters" />
     </option>
   </component>
